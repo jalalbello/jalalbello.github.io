@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 /* TODO Insert root and vars to future proof ur page*/
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
 :root{
     --text-color: #00259a;
     --nav-font: "Raleway";
     --background-color: #f7c98e;
-    --font-size-logo-title: 3rem;
+    --font-size-logo-title: 2rem;
     --logo-letter-spacing: 1px;
     --logo-line-height: 1.8;
     --font-general: 'Comfortaa', san-serif;
@@ -15,19 +22,12 @@
     --text-font-size: 0.9rem;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .logo_title {
     text-decoration: none;
     letter-spacing: var(--logo-letter-spacing);
     line-height: var(--logo-line-height);
     font-size: var(--font-size-logo-title);
     font-family: var(--font-general);
-    padding-left: 3rem;
 }
 
 body {
@@ -39,6 +39,7 @@ body {
 
 .mySlides {
     max-width: 800px;
+    max-height: 800px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -99,8 +100,17 @@ a:link, a:visited {
 
 /*! The call button */
 
-.call {
-    padding: 0.3rem;
-    font-weight: var(--default-font-weight);
-    font-size: 1.1rem;
+footer .call {
+    padding: 0.4rem;
+    padding-top: 0.5rem;
+    font-weight: 400;
+    font-size: var(--text-font-size);
+    font-family: var(--default-font-weight);
+    color: white;
+    background-color: #098b14;
+    border-radius: 2rem;
 }
+
+/* img:not([alt]){
+    border: solid 2px red;
+} */
